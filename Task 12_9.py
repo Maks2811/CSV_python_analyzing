@@ -93,7 +93,7 @@ def plot_2graph(my_dict_1, my_dict_2):
     ax2.bar(key_list2, value_list2)
     ax2.set_xlabel('Дата')
     ax2.set_ylabel('Сумма продаж')
-    ax2.set_title('Общая сумма продаж')
+    ax2.set_title('Общая сумма продаж по дням')
     plt.xticks(rotation=45)
 
     # Вывод графиков
@@ -141,7 +141,7 @@ while True:
 
 if choice == 1:
     plot_graph(total_sales_dict, 'Продукт', 'Сумма продаж', 'Общая сумма продаж по каждому продукту')
-    plot_graph(sales_over_time_dict, 'Дата', 'Сумма продаж', 'Общая сумма продаж')
+    plot_graph(sales_over_time_dict, 'Дата', 'Сумма продаж', 'Общая сумма продаж по дням')
 elif choice == 2:
     plot_2graph(total_sales_dict, sales_over_time_dict)
 
