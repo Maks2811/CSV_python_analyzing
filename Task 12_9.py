@@ -1,7 +1,8 @@
 """ Импортируем необходимые модули"""
 import csv
 from datetime import datetime
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 """ Функция, принимающая на вход csv файл с данными и возвращающая список продаж со словарями"""
 def read_sales_data(file_path):
